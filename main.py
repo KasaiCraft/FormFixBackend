@@ -14,7 +14,7 @@ app.add_middleware(
 
 import os
 
-OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY")
+OPENROUTER_API_KEY = os.environ.get("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")
 
 @app.post("/analyze-form")
 async def analyze_form(file: UploadFile = None, text: str = Form(None)):
